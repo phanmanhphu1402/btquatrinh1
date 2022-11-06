@@ -11,10 +11,4 @@
         android:id="@+id/item2"
         android:title="More Information"
         app:showAsAction="never"/>
-
-    <item
-        android:id="@+id/item3"
-        android:title="Item 3"
-        app:showAsAction="never"/>
-
 </menu>

@@ -42,8 +42,8 @@ public class TableLayout extends Activity {
                 redArray[0] = redArray[0] - (255/100)*progChange;
                 blueArray[0] = blueArray[0] + (255/100)*progChange;
                 blueArray[2] = blueArray[2] - (255/100)*progChange;
-                yellowArray[0] = yellowArray[0] - (125/100)*progChange;
-                yellowArray[2] = yellowArray[2] + (130/100)*progChange;
+                yellowArray[0] = yellowArray[0] - progChange;
+                yellowArray[2] = yellowArray[2] + progChange;
 
                 //Set the boxes to new colors
 

@@ -47,15 +47,12 @@ public class MainActivity extends AppCompatActivity {
                 if(id == 0) {
                     Intent intent = new Intent(MainActivity.this, LinearLayout.class);
                     startActivity(intent);
-                    Toast.makeText(MainActivity.this, "hello 1"+" "+id, Toast.LENGTH_SHORT).show();
                 }
                 if(id == 1) {
-                    Toast.makeText(MainActivity.this, "hello 2"+" "+id, Toast.LENGTH_SHORT).show();
                     Intent intent1 = new Intent(MainActivity.this, RelativeLayout.class);
                     startActivity(intent1);
                 }
                 if(id == 2) {
-                    Toast.makeText(MainActivity.this, "hello 3"+" "+id, Toast.LENGTH_SHORT).show();
                     Intent intent2 = new Intent(MainActivity.this, TableLayout.class);
                     startActivity(intent2);
                 }
@@ -65,7 +62,6 @@ public class MainActivity extends AppCompatActivity {
         lvItems.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(MainActivity.this,"hello"+""+id, Toast.LENGTH_SHORT).show();
                 return false;
             }
         });
@@ -101,9 +97,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.item2:
                 Toast.makeText(this, "Item two selected", Toast.LENGTH_SHORT).show();
                 OpenDialog();
-                return true;
-            case R.id.item3:
-                Toast.makeText(this, "Item three selected", Toast.LENGTH_SHORT).show();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
