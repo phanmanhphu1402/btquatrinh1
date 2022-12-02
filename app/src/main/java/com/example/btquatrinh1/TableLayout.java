@@ -18,7 +18,7 @@ public class TableLayout extends Activity {
         sbThree = findViewById(R.id.seekBarThree);
         sbThree.setMax(100);
 
-        final TextView TextTB1 = (TextView) findViewById(R.id.TextTB1);
+        final TextView TextTB1 =  (TextView) findViewById(R.id.TextTB1);
         final TextView TextTB2 = (TextView) findViewById(R.id.TextTB2);
         final TextView TextTB3 = (TextView) findViewById(R.id.TextTB3);
         final TextView TextTB4 = (TextView) findViewById(R.id.TextTB4);
